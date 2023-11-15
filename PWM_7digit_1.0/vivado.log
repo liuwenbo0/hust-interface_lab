@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Oct 28 11:56:23 2023
+# Process ID: 11652
+# Current directory: D:/_Code/verilog/interface_lab/PWM_7digit_1.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2268 D:\_Code\verilog\interface_lab\PWM_7digit_1.0\edit_PWM_7digit_v1_0.xpr
+# Log file: D:/_Code/verilog/interface_lab/PWM_7digit_1.0/vivado.log
+# Journal file: D:/_Code/verilog/interface_lab/PWM_7digit_1.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/_Code/verilog/interface_lab/PWM_7digit_1.0/edit_PWM_7digit_v1_0.xpr
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0/hdl/PWM_7digit_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [D:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0/hdl/PWM_7digit_v1_0.v:]
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_1.0/component.xml'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/_Download/vivado/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+ipx::package_project -root_dir d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_1.0 -vendor xilinx.com -library user -taxonomy /UserIP
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0
+CRITICAL WARNING: [IP_Flow 19-1681] Failed to reload user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'. ''d:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0' is not valid: Path is contained within another repository.'
+0
+ipx::unload_core d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_1.0/component.xml
+ipx::package_project -root_dir d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0 -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's00_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's00_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's00_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's00_axi_aresetn'.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ipx::unload_core d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0 d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/_Download/vivado/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/ip_repo'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PWM_7digit_v1_0:1.0'. The one found in IP location 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0' will take precedence over the same IP in location d:/_Code/verilog/interface_lab/PWM_7digit_1.0/pwm_7digit_2.0
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0/src/PWM_7digit_Controller.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0/src/PWM_7digit_v1_0_S00_AXI.v:]
+WARNING: [filemgmt 56-99] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [d:/_code/verilog/interface_lab/pwm_7digit_1.0/pwm_7digit_2.0/src/PWM_7digit_v1_0.v:]
+update_compile_order -fileset sources_1
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project
+update_ip_catalog -rebuild -repo_path d:/_Code/verilog/interface_lab/PWM_7digit_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0'
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PWM_7digit_v1_0:1.0'. The one found in IP location 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0' will take precedence over the same IP in location d:/_Code/verilog/interface_lab/PWM_7digit_1.0/pwm_7digit_2.0
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 28 11:59:01 2023...

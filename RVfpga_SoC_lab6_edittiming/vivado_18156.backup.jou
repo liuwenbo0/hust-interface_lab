@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  9 11:34:06 2023
+# Process ID: 18156
+# Current directory: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18688 D:\_Code\verilog\interface_lab\RVfpga_SoC_lab6_edittiming\RVfpga_SoC.xpr
+# Log file: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming/vivado.log
+# Journal file: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming/RVfpga_SoC.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Nov  9 11:34:06 2023
+# Process ID: 18156
+# Current directory: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18688 D:\_Code\verilog\interface_lab\RVfpga_SoC_lab6_edittiming\RVfpga_SoC.xpr
+# Log file: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming/vivado.log
+# Journal file: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/_Code/verilog/interface_lab/RVfpga_SoC_lab6_edittiming/RVfpga_SoC.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/raminfr.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_receiver.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_regs.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_rfifo.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_sync_flops.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_tfifo.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_top.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_transmitter.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_wb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/wb_uart_wrapper.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'D:/_Code/verilog/uart/uart_defines.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/_Download/vivado/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PWM_7digit_v1_0:1.0'. The one found in IP location 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/pwm_7digit_2.0' will take precedence over the same IP in location d:/_Code/verilog/ip_repo/pwm_7digit_2.0
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 839.801 ; gain = 136.812
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  9 11:35:25 2023...

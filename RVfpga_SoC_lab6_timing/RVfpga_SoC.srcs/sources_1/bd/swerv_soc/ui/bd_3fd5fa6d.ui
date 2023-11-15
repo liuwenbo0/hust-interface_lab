@@ -1,0 +1,119 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.16629",
+   "Default View_TopLeft":"1780,-742",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port ram -pg 1 -lvl 9 -x 3420 -y -350 -defaultsOSRD
+preplace port clk_0 -pg 1 -lvl 0 -x -170 -y -180 -defaultsOSRD
+preplace port dmi_hard_reset_0 -pg 1 -lvl 0 -x -170 -y 20 -defaultsOSRD
+preplace port dmi_reg_en_0 -pg 1 -lvl 0 -x -170 -y -60 -defaultsOSRD
+preplace port dmi_reg_wr_en_0 -pg 1 -lvl 0 -x -170 -y -20 -defaultsOSRD
+preplace port rst_0 -pg 1 -lvl 0 -x -170 -y -160 -defaultsOSRD
+preplace port i_ram_init_error_0 -pg 1 -lvl 0 -x -170 -y 90 -defaultsOSRD
+preplace port i_ram_init_done_0 -pg 1 -lvl 0 -x -170 -y 70 -defaultsOSRD
+preplace port i_uart_rx -pg 1 -lvl 0 -x -170 -y 250 -defaultsOSRD
+preplace port o_uart_tx -pg 1 -lvl 9 -x 3420 -y 180 -defaultsOSRD
+preplace portBus dmi_reg_addr_0 -pg 1 -lvl 0 -x -170 -y -40 -defaultsOSRD
+preplace portBus dmi_reg_rdata_0 -pg 1 -lvl 9 -x 3420 -y -50 -defaultsOSRD
+preplace portBus dmi_reg_wdata_0 -pg 1 -lvl 0 -x -170 -y 0 -defaultsOSRD
+preplace portBus AN_0 -pg 1 -lvl 9 -x 3420 -y 140 -defaultsOSRD
+preplace portBus Digits_Bits_0 -pg 1 -lvl 9 -x 3420 -y 160 -defaultsOSRD
+preplace portBus bidir -pg 1 -lvl 9 -x 3420 -y 440 -defaultsOSRD
+preplace portBus i_sw -pg 1 -lvl 0 -x -170 -y -350 -defaultsOSRD
+preplace portBus o_led -pg 1 -lvl 9 -x 3420 -y -380 -defaultsOSRD
+preplace portBus PWMs -pg 1 -lvl 9 -x 3420 -y -550 -defaultsOSRD
+preplace inst axi2wb_intcon_wrapper_0 -pg 1 -lvl 2 -x 550 -y 180 -defaultsOSRD
+preplace inst wb_gpio_wrapper_0 -pg 1 -lvl 7 -x 2880 -y 750 -defaultsOSRD
+preplace inst bootrom_wrapper_0 -pg 1 -lvl 7 -x 2880 -y -80 -defaultsOSRD
+preplace inst swerv_wrapper_verilog_0 -pg 1 -lvl 1 -x 100 -y -80 -defaultsOSRD
+preplace inst wb_uart_wrapper_0 -pg 1 -lvl 4 -x 1520 -y 170 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 4 -x 1520 -y -400 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 5 -x 1910 -y -310 -defaultsOSRD
+preplace inst PWM_7digit_v1_0_0 -pg 1 -lvl 5 -x 1910 -y -490 -defaultsOSRD
+preplace inst syscon_wrapper_0 -pg 1 -lvl 7 -x 2880 -y 470 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -x 3250 -y 430 -defaultsOSRD
+preplace inst PWM_w_Int_v1_0_0 -pg 1 -lvl 6 -x 2290 -y -540 -defaultsOSRD
+preplace inst ptc_wrapper_0 -pg 1 -lvl 3 -x 1020 -y 520 -defaultsOSRD
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_adr_o 1 2 5 N -310 1320 -110 N -110 N -110 N
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_dat_o 1 2 5 780 -570 1180 -720 N -720 N -720 2630
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_sel_o 1 2 5 N -270 1220 -70 N -70 N -70 N
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_we_o 1 2 5 810 -200 N -200 N -200 N -200 2600
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_cyc_o 1 2 5 N -230 N -230 1720 -220 N -220 2610
+preplace netloc axi2wb_intcon_wrapper_0_wb_rom_stb_o 1 2 5 N -210 N -210 1720 -190 N -190 2580
+preplace netloc bootrom_wrapper_0_o_wb_ack 1 1 7 290 -550 760J -560 1190 -710 N -710 N -710 N -710 3070
+preplace netloc bootrom_wrapper_0_o_wb_rdt 1 1 7 320 -540 770J -550 1200 -700 N -700 N -700 N -700 3060
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_adr_o 1 2 5 760 -20 N -20 N -20 N -20 2550
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_dat_o 1 2 5 750 0 N 0 N 0 N 0 2540
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_sel_o 1 2 5 N 10 N 10 N 10 N 10 2520
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_we_o 1 2 5 N 30 N 30 N 30 N 30 2510
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_cyc_o 1 2 5 770 -10 N -10 N -10 N -10 2530
+preplace netloc axi2wb_intcon_wrapper_0_wb_sys_stb_o 1 2 5 810 20 N 20 N 20 N 20 2500
+preplace netloc syscon_wrapper_0_o_wb_ack 1 1 7 300 -470 NJ -470 1280 -620 1750 -680 N -680 N -680 3080
+preplace netloc syscon_wrapper_0_o_wb_rdt 1 1 7 330 -460 NJ -460 1290 -610 N -610 2080 -690 N -690 3090
+preplace netloc syscon_wrapper_0_o_nmi_int 1 0 8 -100 -500 NJ -500 NJ -500 1250 -650 N -650 N -650 N -650 3050
+preplace netloc syscon_wrapper_0_o_nmi_vec 1 0 8 -90 -490 NJ -490 NJ -490 1260 -640 N -640 N -640 N -640 3030
+preplace netloc syscon_wrapper_0_o_timer_irq 1 0 8 -80 -480 NJ -480 NJ -480 1270 -630 N -630 2110 -670 N -670 3040
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_cyc_o 1 2 5 N 370 N 370 N 370 N 370 2470
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_adr_o 1 2 5 N 290 1290 310 N 310 N 310 2490
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_dat_o 1 2 5 N 310 1180 320 N 320 N 320 2480
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_sel_o 1 2 5 N 330 N 330 N 330 N 330 2460
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_we_o 1 2 5 N 350 N 350 N 350 N 350 2450
+preplace netloc axi2wb_intcon_wrapper_0_wb_gpio_stb_o 1 2 5 N 390 N 390 N 390 N 390 2440
+preplace netloc wb_gpio_wrapper_0_wb_dat_o 1 1 7 290 890 NJ 890 N 890 N 890 N 890 N 890 3070
+preplace netloc wb_gpio_wrapper_0_wb_ack_o 1 1 7 310 880 NJ 880 N 880 N 880 N 880 N 880 3030
+preplace netloc wb_gpio_wrapper_0_wb_err_o 1 1 7 300 900 NJ 900 N 900 N 900 N 900 N 900 3040
+preplace netloc wb_gpio_wrapper_0_wb_inta_o 1 6 2 2630 300 3060
+preplace netloc clk_0_1 1 0 7 -120J -250 280 -410 790 -400 1350 -560 1700 -410 2070 -430 2560
+preplace netloc dmi_hard_reset_0_1 1 0 1 NJ 20
+preplace netloc dmi_reg_addr_0_1 1 0 1 NJ -40
+preplace netloc dmi_reg_en_0_1 1 0 1 NJ -60
+preplace netloc swerv_wrapper_verilog_0_dmi_reg_rdata 1 1 8 260J -510 NJ -510 1240 -660 N -660 N -660 N -660 NJ -660 3390
+preplace netloc dmi_reg_wdata_0_1 1 0 1 NJ 0
+preplace netloc dmi_reg_wr_en_0_1 1 0 1 NJ -20
+preplace netloc rst_0_1 1 0 7 -110J -240 270 -420 800 -410 1340 -580 1730 -580 2120 -630 2570
+preplace netloc i_ram_init_error_0_1 1 0 7 -130J -520 NJ -520 NJ -520 1230 -670 N -670 2100 -410 2590
+preplace netloc i_ram_init_done_0_1 1 0 7 -140J -530 NJ -530 NJ -530 1220 -680 1740 -400 2110 -420 2620
+preplace netloc wb_gpio_wrapper_0_bidir 1 7 2 3110 300 3370
+preplace netloc axi2wb_intcon_wrapper_0_wb_uart_adr_o 1 2 2 N 130 N
+preplace netloc axi2wb_intcon_wrapper_0_wb_uart_dat_o 1 2 2 N 150 N
+preplace netloc axi2wb_intcon_wrapper_0_wb_uart_sel_o 1 2 2 N 170 1210
+preplace netloc axi2wb_intcon_wrapper_0_wb_uart_we_o 1 2 2 N 190 1280
+preplace netloc axi2wb_intcon_wrapper_0_wb_uart_cyc_o 1 2 2 N 210 N
+preplace netloc axi2wb_intcon_wrapper_0_wb_uart_stb_o 1 2 2 810 200 1330
+preplace netloc wb_uart_wrapper_0_wb_dat_o 1 1 4 340 -430 NJ -430 1320 -570 1670
+preplace netloc wb_uart_wrapper_0_wb_ack_o 1 1 4 310 -440 NJ -440 1310 -590 1680
+preplace netloc i_uart_rx_0_1 1 0 4 NJ 250 260J 770 810 250 N
+preplace netloc wb_uart_wrapper_0_o_uart_tx 1 4 5 NJ 180 N 180 N 180 NJ 180 N
+preplace netloc gpio2_io_i_0_1 1 0 6 -150J -560 NJ -560 750J -540 1210 -690 NJ -690 2050
+preplace netloc axi_gpio_0_gpio_io_o 1 5 4 2120J -400 N -400 NJ -400 3380
+preplace netloc PWM_7digit_v1_0_0_AN 1 5 4 2090J -440 N -440 N -440 3360
+preplace netloc PWM_7digit_v1_0_0_Digits_Bits 1 5 4 2080 -450 N -450 NJ -450 3370
+preplace netloc axi2wb_intcon_wrapper_0_wb_ptc_cyc_o 1 2 1 N 490
+preplace netloc axi2wb_intcon_wrapper_0_wb_ptc_stb_o 1 2 1 740 510n
+preplace netloc axi2wb_intcon_wrapper_0_wb_ptc_we_o 1 2 1 750 470n
+preplace netloc axi2wb_intcon_wrapper_0_wb_ptc_dat_o 1 2 1 770 430n
+preplace netloc axi2wb_intcon_wrapper_0_wb_ptc_adr_o 1 2 1 780 410n
+preplace netloc axi2wb_intcon_wrapper_0_wb_ptc_sel_o 1 2 1 760 450n
+preplace netloc ptc_wrapper_0_wb_dat_o 1 1 3 320 800 NJ 800 1290
+preplace netloc ptc_wrapper_0_wb_ack_o 1 1 3 330 790 NJ 790 1240
+preplace netloc ptc_wrapper_0_wb_err_o 1 1 3 340 780 NJ 780 1190
+preplace netloc ptc_wrapper_0_wb_inta_o 1 3 4 1320 420 NJ 420 NJ 420 NJ
+preplace netloc syscon_wrapper_0_o_sw_irq3 1 7 1 3100 400n
+preplace netloc syscon_wrapper_0_o_sw_irq4 1 7 1 3120 420n
+preplace netloc xlconcat_0_dout 1 0 9 -70 -450 NJ -450 NJ -450 1300J -600 NJ -600 2070J -730 NJ -730 NJ -730 3340
+preplace netloc PWM_w_Int_v1_0_0_LEDs 1 6 3 NJ -550 NJ -550 NJ
+preplace netloc swerv_wrapper_verilog_0_ifu_axi 1 1 1 N -110
+preplace netloc swerv_wrapper_verilog_0_sb_axi 1 1 1 N -70
+preplace netloc axi_interconnect_0_M00_AXI 1 4 1 1690 -420n
+preplace netloc axi2wb_intcon_wrapper_0_o_user_axi4 1 2 2 810 -420 1330
+preplace netloc swerv_wrapper_verilog_0_lsu_axi 1 1 1 N -90
+preplace netloc axi2wb_intcon_wrapper_0_o_ram_axi4 1 2 7 740J -580 1170 -730 NJ -730 2060J -390 N -390 NJ -390 3350
+preplace netloc axi_interconnect_0_M01_AXI 1 4 1 1720 -510n
+preplace netloc axi_interconnect_0_M02_AXI 1 4 2 1710 -570 2110J
+levelinfo -pg 1 -170 100 550 1020 1520 1910 2290 2880 3250 3420
+pagesize -pg 1 -db -bbox -sgen -370 -740 3620 1180
+"
+}
+0

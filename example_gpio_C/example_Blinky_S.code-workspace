@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../../_Document/interface_lab/lab2_src/example_Blinky_S"
+		},
+		{
+			"name": "example_gpio_C",
+			"path": "."
+		}
+	],
+	"settings": {}
+}

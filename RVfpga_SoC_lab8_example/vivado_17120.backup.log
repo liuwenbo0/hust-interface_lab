@@ -1,0 +1,204 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Nov 10 08:53:28 2023
+# Process ID: 17120
+# Current directory: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7528 D:\_Code\verilog\interface_lab\RVfpga_SoC_lab8_example\RVfpga_SoC.xpr
+# Log file: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/vivado.log
+# Journal file: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.xpr
+INFO: [Project 1-313] Project file moved from 'D:/_Code/verilog/interface_lab/RVfpga_SoC_lab7_example' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'D:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/_Download/vivado/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PWM_7digit_v1_0:1.0'. The one found in IP location 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/pwm_7digit_2.0' will take precedence over the same IP in location d:/_Code/verilog/ip_repo/pwm_7digit_2.0
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 835.945 ; gain = 141.883
+update_compile_order -fileset sources_1
+add_files -scan_for_includes {D:/_Code/verilog/spi/spi/fifo4.v D:/_Code/verilog/spi/spi/simple_spi_top.v D:/_Code/verilog/spi/spi/wb_spi_wrapper.v}
+add_files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1691.379 ; gain = 0.000
+open_bd_design {D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd}
+Adding component instance block -- xilinx.com:user:axi2wb_intcon_wrapper:1.0 - axi2wb_intcon_wrapper_0
+Adding component instance block -- xilinx.com:user:wb_gpio_wrapper:1.0 - wb_gpio_wrapper_0
+Adding component instance block -- xilinx.com:module_ref:bootrom_wrapper:1.0 - bootrom_wrapper_0
+Adding component instance block -- xilinx.com:user:swerv_wrapper_verilog:1.0 - swerv_wrapper_verilog_0
+Adding component instance block -- xilinx.com:module_ref:wb_uart_wrapper:1.0 - wb_uart_wrapper_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_0
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:user:PWM_7digit_v1_0:1.0 - PWM_7digit_v1_0_0
+Adding component instance block -- xilinx.com:module_ref:syscon_wrapper:1.0 - syscon_wrapper_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:module_ref:ptc_wrapper:1.0 - ptc_wrapper_0
+Adding component instance block -- xilinx.com:user:PWM_w_Int_v1_0:1.0 - PWM_w_Int_v1_0_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /syscon_wrapper_0/o_timer_irq(intr) and /swerv_wrapper_verilog_0/timer_int(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_gpio_wrapper_0/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_uart_wrapper_0/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /ptc_wrapper_0/wb_clk_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_gpio_wrapper_0/wb_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_uart_wrapper_0/wb_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /ptc_wrapper_0/wb_rst_i(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ptc_wrapper_0/wb_inta_o(undef) and /syscon_wrapper_0/ptc_irq(intr)
+Successfully read diagram <swerv_soc> from BD file <D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd>
+open_bd_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1695.645 ; gain = 0.000
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference wb_spi_wrapper wb_spi_wrapper_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'spi_irq' of definition 'xilinx.com:signal:interrupt:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'spi_irq': Added interface parameter 'SENSITIVITY' with value 'LEVEL_HIGH'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/PWM_7digit_1.0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/_Code/verilog/ip_repo'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:PWM_7digit_v1_0:1.0'. The one found in IP location 'd:/_Code/verilog/interface_lab/PWM_7digit_1.0/pwm_7digit_2.0' will take precedence over the same IP in location d:/_Code/verilog/ip_repo/pwm_7digit_2.0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_0
+endgroup
+set_property location {3 1111 -133} [get_bd_cells wb_spi_wrapper_0]
+set_property location {3 1112 639} [get_bd_cells wb_spi_wrapper_0]
+set_property location {3 1070 610} [get_bd_cells wb_spi_wrapper_0]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_adr_o] [get_bd_pins wb_spi_wrapper_0/wb_adr_i]
+connect_bd_net [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_dat_o] [get_bd_pins wb_spi_wrapper_0/wb_dat_i]
+connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_we_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_we_o]
+connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_stb_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_stb_o]
+connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_cyc_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_cyc_o]
+connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_sel_i] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_sel_o]
+startgroup
+set_property -dict [list CONFIG.NUM_MI {4}] [get_bd_cells axi_interconnect_0]
+endgroup
+set_property location {5 1991 -157} [get_bd_cells axi_iic_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M03_AXI] [get_bd_intf_pins axi_iic_0/S_AXI]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_iic_0/s_axi_aclk]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_iic_0/s_axi_aresetn]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins axi_interconnect_0/M03_ACLK]
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins axi_interconnect_0/M03_ARESETN]
+connect_bd_net [get_bd_ports clk_0] [get_bd_pins wb_spi_wrapper_0/wb_clk_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_0(clk) and /wb_spi_wrapper_0/wb_clk_i(undef)
+connect_bd_net [get_bd_ports rst_0] [get_bd_pins wb_spi_wrapper_0/wb_rst_i]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_0(rst) and /wb_spi_wrapper_0/wb_rst_i(undef)
+startgroup
+make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/o_accel_sclk]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/o_accel_cs_n]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/o_accel_mosi]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins wb_spi_wrapper_0/i_accel_miso]
+endgroup
+connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_dat_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_dat_i]
+connect_bd_net [get_bd_pins wb_spi_wrapper_0/wb_ack_o] [get_bd_pins axi2wb_intcon_wrapper_0/wb_spi_accel_ack_i]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins axi_iic_0/IIC]
+endgroup
+set_property name temp_sensor [get_bd_intf_ports IIC_0]
+connect_bd_net [get_bd_pins xlconcat_0/In4] [get_bd_pins syscon_wrapper_0/Digits_Bits]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xlconcat_0/In4] [get_bd_pins syscon_wrapper_0/Digits_Bits]'
+connect_bd_net [get_bd_pins xlconcat_0/In4] [get_bd_pins wb_spi_wrapper_0/spi_irq]
+connect_bd_net [get_bd_pins xlconcat_0/In5] [get_bd_pins axi_iic_0/iic2intc_irpt]
+save_bd_design
+Wrote  : <D:\_Code\verilog\interface_lab\RVfpga_SoC_lab8_example\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+Wrote  : <D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ui/bd_3fd5fa6d.ui> 
+update_compile_order -fileset sources_1
+assign_bd_address [get_bd_addr_segs {axi_iic_0/S_AXI/Reg }]
+Slave segment </axi_iic_0/S_AXI/Reg> is being mapped into address space </axi2wb_intcon_wrapper_0/o_user_axi4> at <0x4080_0000 [ 64K ]>
+set_property offset 0x80150000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_iic_0_Reg}]
+set_property offset 0x80160000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_iic_0_Reg}]
+set_property offset 0x80150000 [get_bd_addr_segs {axi2wb_intcon_wrapper_0/o_user_axi4/SEG_axi_iic_0_Reg}]
+save_bd_design
+Wrote  : <D:\_Code\verilog\interface_lab\RVfpga_SoC_lab8_example\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+validate_bd_design
+WARNING: [BD 41-927] Following properties on pin /wb_uart_wrapper_0/wb_clk_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.000 
+WARNING: [BD 41-927] Following properties on pin /wb_uart_wrapper_0/wb_rst_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_LOW 
+WARNING: [BD 41-927] Following properties on pin /ptc_wrapper_0/wb_clk_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.000 
+WARNING: [BD 41-927] Following properties on pin /ptc_wrapper_0/wb_rst_i have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	POLARITY=ACTIVE_LOW 
+WARNING: [BD 41-927] Following properties on pin /ptc_wrapper_0/wb_inta_o have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PortWidth=1 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+
+generate_target all [get_files  D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+INFO: [BD 41-1662] The design 'swerv_soc.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/axi2wb_intcon_wrapper_0/wb_spi_flash_dat_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_ack_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_flash_rty_i
+/axi2wb_intcon_wrapper_0/wb_sys_err_i
+/axi2wb_intcon_wrapper_0/wb_sys_rty_i
+/axi2wb_intcon_wrapper_0/wb_uart_err_i
+/axi2wb_intcon_wrapper_0/wb_uart_rty_i
+/axi2wb_intcon_wrapper_0/wb_ptc_rty_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_err_i
+/axi2wb_intcon_wrapper_0/wb_spi_accel_rty_i
+
+Wrote  : <D:\_Code\verilog\interface_lab\RVfpga_SoC_lab8_example\RVfpga_SoC.srcs\sources_1\bd\swerv_soc\swerv_soc.bd> 
+VHDL Output written to : D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.v
+VHDL Output written to : D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/sim/swerv_soc.v
+VHDL Output written to : D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hdl/swerv_soc_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi2wb_intcon_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_gpio_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block bootrom_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block syscon_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block swerv_wrapper_verilog_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_uart_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_7digit_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ptc_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_w_Int_v1_0_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block wb_spi_wrapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_auto_ds_0/swerv_soc_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/ip/swerv_soc_auto_pc_0/swerv_soc_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+Exporting to file D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hw_handoff/swerv_soc.hwh
+Generated Block Design Tcl file D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/hw_handoff/swerv_soc_bd.tcl
+Generated Hardware Definition File D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/synth/swerv_soc.hwdef
+catch { config_ip_cache -export [get_ips -all swerv_soc_xbar_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_axi_iic_0_0] }
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_ds_0, cache-ID = 6daa21a3d6f3034b; cache size = 75.969 MB.
+catch { config_ip_cache -export [get_ips -all swerv_soc_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP swerv_soc_auto_pc_0, cache-ID = 2e5c49a27275f34c; cache size = 75.969 MB.
+export_ip_user_files -of_objects [get_files D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd]
+launch_runs -jobs 8 {swerv_soc_xbar_0_synth_1 swerv_soc_wb_spi_wrapper_0_0_synth_1 swerv_soc_axi_iic_0_0_synth_1}
+[Fri Nov 10 09:06:15 2023] Launched swerv_soc_xbar_0_synth_1, swerv_soc_wb_spi_wrapper_0_0_synth_1, swerv_soc_axi_iic_0_0_synth_1...
+Run output will be captured here:
+swerv_soc_xbar_0_synth_1: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.runs/swerv_soc_xbar_0_synth_1/runme.log
+swerv_soc_wb_spi_wrapper_0_0_synth_1: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.runs/swerv_soc_wb_spi_wrapper_0_0_synth_1/runme.log
+swerv_soc_axi_iic_0_0_synth_1: D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.runs/swerv_soc_axi_iic_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.srcs/sources_1/bd/swerv_soc/swerv_soc.bd] -directory D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.ip_user_files/sim_scripts -ip_user_files_dir D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.ip_user_files -ipstatic_source_dir D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.cache/compile_simlib/modelsim} {questa=D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.cache/compile_simlib/questa} {riviera=D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.cache/compile_simlib/riviera} {activehdl=D:/_Code/verilog/interface_lab/RVfpga_SoC_lab8_example/RVfpga_SoC.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 10 09:20:57 2023...

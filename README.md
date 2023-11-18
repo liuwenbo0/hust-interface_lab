@@ -1,6 +1,6 @@
 # hust-interface_lab
  接口技术实验
  
- main分支为base，包含项目用到的ip，除Document外的其他分支在main分支的基础上建立
+ main分支为base，包含项目用到的ip，除Document和lab9外的其他分支在main分支的基础上建立
  
  其他分支不同于main分支的部分为对应实验的项目文件，其中以RVfpga_SoC为开头的文件夹包含vivado项目，example开头的文件夹包含Platform平台的演示程序，work开头的文件夹包含Platform平台的动手实践程序
